@@ -14,6 +14,11 @@ app.get('/', (req,res)=> {
     
 });
 
+app.get('/info', (req,res)=> {
+    res.send('Josseline Suseth Godinez Garcia 201503841 ayd1');
+});
+
+
 app.post('/calculadora', (req,res) => {
 
     let num1= req.body.num1;
@@ -23,6 +28,8 @@ app.post('/calculadora', (req,res) => {
     }
     res.send(result);
 });
+
+
 
 
 
