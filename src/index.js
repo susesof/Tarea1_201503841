@@ -24,7 +24,7 @@ app.post('/calculadora', (req,res) => {
     let num1= req.body.num1;
     let num2= req.body.num2;
     const result = {
-        "resultado": num1+num2
+        "resultado": num1*num2
     }
     res.send(result);
 });
