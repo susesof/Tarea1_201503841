@@ -14,6 +14,22 @@ app.get('/', (req,res)=> {
     
 });
 
+app.get('/info', (req,res)=> {
+    res.send('Josseline Suseth Godinez Garcia 201503841');
+});
+
+
+app.post('/calculadora', (req,res) => {
+
+    let num1= req.body.num1;
+    let num2= req.body.num2;
+    const result = {
+        "resultado": num1+num2
+    }
+    res.send(result);
+});
+
+
 
 app.listen(app.get('port'), () => {
     console.log(`Server on port ${app.get('port')}`);
